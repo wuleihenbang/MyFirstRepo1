@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <Button android:text="开启音乐播放服务" 
+        android:textSize="20sp" 
+        android:id="@+id/Button01" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp">
+	</Button>
+	<Button android:text="停止音乐播放服务" 
+	    android:textSize="20sp" 
+	    android:id="@+id/Button02" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_marginTop="10dp">
+	</Button>
+
+	<Button android:text="绑定音乐播放服务" 
+	    android:textSize="20sp" 
+	    android:id="@+id/Button03" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" >
+	</Button>
+	<Button android:text="解绑定音乐播放服务" 
+	    android:textSize="20sp" 
+	    android:id="@+id/Button04" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" >
+	</Button>
+    
+</LinearLayout>

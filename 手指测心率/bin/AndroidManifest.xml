@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wl.adrxin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon72"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wl.adrxin.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".MyCameraActivity"></activity>
+        <activity 
+            android:name=".WaveActivity"></activity>
+        <activity 
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.wl.photo.MyPhotoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.wl.photo.MultiTouch"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.wl.old.MainOldActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.wl.newJNI.MainJNIActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.wl.mp3.MainHelloService"
+            android:screenOrientation="portrait"></activity>
+        
+        <service android:enabled="true" android:name="com.wl.mp3.MusicService"/>
+    </application>
+
+</manifest>
