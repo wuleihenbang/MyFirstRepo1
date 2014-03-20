@@ -53,6 +53,7 @@ public class MainOldActivity extends Activity implements Camera.PreviewCallback 
 	private long firstFrameTime = 0;   //第一帧
 	private int frameRate = 0;
 	
+	
 	// 坐标图变量（多个数据其他图标）--------------------------------
 	XYSeries series[] = new XYSeries[3];	//用于提供绘制的点集合的数据，根据每条线的名称创建
 	XYMultipleSeriesDataset dataset;		//用于保存点集数据，包括每条曲线的X，Y坐标
@@ -91,6 +92,7 @@ public class MainOldActivity extends Activity implements Camera.PreviewCallback 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);	//设置高亮
         setContentView(R.layout.main_old);
+        System.out.println("");
         
         list = new ArrayList<Integer>();
         //曲线
