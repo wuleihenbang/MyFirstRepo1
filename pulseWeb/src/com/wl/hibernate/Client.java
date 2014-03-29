@@ -20,7 +20,6 @@ public class Client {
 			User user = new User();
 			user.setName("张三");
 			user.setPassword("123");
-			System.out.println(new Date());
 			user.setCreateTime(new Date());
 			user.setExpireTime(new Date());
 			
